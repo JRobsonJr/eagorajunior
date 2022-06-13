@@ -2,7 +2,7 @@ import Head from 'next/head'
 
 import type { FC } from 'react'
 
-const URL_PREFIX = ''
+const URL_PREFIX = 'https://www.eagorajunior.com.br'
 
 interface Props {
   title: string

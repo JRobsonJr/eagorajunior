@@ -52,9 +52,9 @@ const AuthorSection = () => (
           <br />
           Olá, meu nome é Robson! Tenho 23 anos e vim bem literalmente lá do
           sertão, do interior da Paraíba. Sou formado em Ciência da Computação e
-          tenho uma paixão por escrita. Já escrevo poemas há alguns anos e estou
-          prestes a, finalmente, publicar meu primeiro livro:{' '}
-          <i>Eu diante de antieu</i>.
+          tenho uma paixão por escrita. Já escrevo poemas há alguns anos e
+          recentemente publiquei meu primeiro livro, <i>Eu diante de antieu</i>,
+          pela Editora Folheando.
           <br />
           <br />
           Seria um prazer ser lido por você!

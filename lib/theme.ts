@@ -165,6 +165,11 @@ const theme: Theme = {
       textTransform: 'uppercase',
       whiteSpace: 'nowrap',
     },
+    photo: {
+      ':hover': {
+        opacity: 0.75,
+      },
+    },
   },
   grids: {
     section: {

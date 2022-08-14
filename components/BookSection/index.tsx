@@ -5,6 +5,7 @@ import type { ThemeUIStyleObject } from 'theme-ui'
 
 import BookCover from './BookCover'
 import BookDetails from './BookDetails'
+import RecitedPoems from './RecitedPoems'
 
 const gridStyle: ThemeUIStyleObject = {
   backgroundImage: `url(./bgt.png)`,
@@ -12,9 +13,12 @@ const gridStyle: ThemeUIStyleObject = {
 }
 
 const BookSection: FC = () => (
-  <Grid variant="section" sx={gridStyle}>
-    <BookCover />
-    <BookDetails />
+  <Grid sx={gridStyle}>
+    <Grid variant="section">
+      <BookCover />
+      <BookDetails />
+    </Grid>
+    <RecitedPoems />
   </Grid>
 )
 

@@ -31,10 +31,14 @@ const BookDetails = () => (
         href="https://www.editorafolheando.com.br/pd-9014d5-eu-diante-de-antieu.html"
         variant="button"
       >
-        Pré-venda
+        Comprar
       </Link>
-      <Link href="/amostra" variant="button">
-        Uma amostra
+      <Link
+        newTab
+        href="https://www.skoob.com.br/livro/12214398ED12195511"
+        variant="button"
+      >
+        Skoob
       </Link>
     </Flex>
   </Flex>

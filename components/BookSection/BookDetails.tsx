@@ -23,7 +23,7 @@ const menuStyle: ThemeUIStyleObject = {
 
 const BookDetails = () => (
   <Flex sx={containerStyle}>
-    <Text variant="sectionSubtitle">Um livro de poesia</Text>
+    <Text variant="sectionSubtitle">Um primeiro livro de poesia</Text>
     <BookTitle />
     <Flex sx={menuStyle}>
       <Link

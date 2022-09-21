@@ -8,6 +8,7 @@ import BookSection from '../components/BookSection'
 import Meta from '../components/Meta'
 import Navbar from '../components/Navbar'
 import NewsletterSection from '../components/NewsletterSection'
+import PreOrderSection from '../components/PreOrderSection'
 
 const NAVBAR_HEIGHT = 48
 
@@ -34,6 +35,7 @@ const Home: NextPage = () => {
       <Flex sx={bodyStyle}>
         <Navbar />
         <Flex sx={containerStyle}>
+          <PreOrderSection />
           <BookSection />
           <NewsletterSection />
           <AuthorSection />

@@ -54,7 +54,9 @@ const AuthorSection = () => (
           sertão, do interior da Paraíba. Sou formado em Ciência da Computação e
           tenho uma paixão por escrita. Já escrevo poemas há alguns anos e
           recentemente publiquei meu primeiro livro, <i>Eu diante de antieu</i>,
-          pela Editora Folheando.
+          pela Editora Folheando. Além disso, meu mais novo livro,{' '}
+          <i>Daqui do quarto</i>, está em pré-venda e será publicado em breve
+          pela Editora Urutau.
           <br />
           <br />
           Seria um prazer ser lido por você!

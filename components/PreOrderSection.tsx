@@ -15,6 +15,8 @@ const containerStyle: ThemeUIStyleObject = {
 
 const imageStyle: ThemeUIStyleObject = {
   height: 'auto',
+  maxHeight: '80%',
+  maxWidth: '80%',
   boxShadow: '0 0 32px rgba(0, 0, 0, 0.125)',
 }
 
@@ -22,8 +24,8 @@ const PreOrderArt: FC = () => (
   <Flex sx={containerStyle}>
     <Image
       sx={imageStyle}
-      src="/ddq.jpg"
-      alt="Arte da pré-venda do livro 'Daqui do quarto', de Robson Junior."
+      src="/ddq.png"
+      alt="Arte da capa do livro 'Daqui do quarto', de Robson Junior."
     />
   </Flex>
 )
@@ -53,10 +55,17 @@ const PreOrderSection: FC = () => (
       <Flex sx={menuStyle}>
         <Link
           newTab
-          href="https://benfeitoria.com/projeto/daqui"
+          href="https://editoraurutau.com/titulo/daqui-do-quarto"
           variant="button"
         >
-          Pré-venda
+          Comprar
+        </Link>
+        <Link
+          newTab
+          href="https://www.skoob.com.br/daqui-do-quarto-122240598ed122246815.html"
+          variant="button"
+        >
+          Skoob
         </Link>
       </Flex>
     </Flex>

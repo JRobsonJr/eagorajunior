@@ -12,7 +12,7 @@ const gridStyle: ThemeUIStyleObject = {
   backgroundSize: '20rem',
 }
 
-const BookSection: FC = () => (
+const EDDASection: FC = () => (
   <Grid sx={gridStyle}>
     <Grid variant="section">
       <BookCover />
@@ -22,4 +22,4 @@ const BookSection: FC = () => (
   </Grid>
 )
 
-export default BookSection
+export default EDDASection

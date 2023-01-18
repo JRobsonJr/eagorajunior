@@ -42,33 +42,25 @@ const imageContainer: ThemeUIStyleObject = {
   flexDirection: 'column',
 }
 
-const NewsletterSection = () => (
+const SocialMediaSection = () => (
   <Grid variant="section" id="newsletter">
     <Flex sx={textContainerStyle}>
-      <Text variant="sectionSubtitle">Uma newsletter</Text>
+      <Text variant="sectionSubtitle">Minha persona literária online</Text>
       <Text variant="sectionTitle">E agora, Junior?</Text>
       <Box as="article" sx={articleStyle}>
         <Text>
-          Entregue a cada duas semanas (juro que eu tento), incluindo os
-          seguintes conteúdos imperdíveis:
+          Acompanhe-me pelas redes sociais para ver alguns conteúdos
+          interessantíssimos (talvez), como:
         </Text>
         <Box as="ul" sx={ulStyle}>
           <li>atualizações sobre escrita,</li>
           <li>descobertas simples do dia a dia,</li>
-          <li>o que eu ando fazendo (às vezes é algo interessante!),</li>
           <li>poemas meus e de outros autores que eu adoro,</li>
           <li>recomendações de músicas e livros,</li>
           <li>e talvez muito mais!</li>
         </Box>
       </Box>
       <Flex sx={menuStyle}>
-        <Link
-          href="https://www.getrevue.co/profile/jrobsonjr"
-          variant="button"
-          newTab
-        >
-          Assine já!
-        </Link>
         <Link
           href="https://www.instagram.com/eagorajunior"
           variant="button"
@@ -88,11 +80,11 @@ const NewsletterSection = () => (
     <Flex sx={imageContainer}>
       <Image
         src="/eaj.png"
-        alt="Arte da newsletter 'E agora, Junior?'"
+        alt="Arte da página 'E agora, Junior?'"
         sx={{ maxWidth: ['100%', '80%', '80%', '100%'] }}
       />
     </Flex>
   </Grid>
 )
 
-export default NewsletterSection
+export default SocialMediaSection

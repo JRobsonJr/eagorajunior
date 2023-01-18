@@ -36,13 +36,13 @@ const AuthorSection = () => (
   <Grid variant="section" id="sobre">
     <Flex sx={imageContainer}>
       <Image
-        src="/robson.png"
+        src="/eueu.png"
         alt="Uma foto de Robson Junior."
         sx={{ maxWidth: ['100%', '80%', '80%', '100%'] }}
       />
     </Flex>
     <Flex sx={textContainerStyle}>
-      <Text variant="sectionSubtitle">Um autor</Text>
+      <Text variant="sectionSubtitle">Eu, um autor</Text>
       <Text variant="sectionTitle">Robson Junior</Text>
       <Box sx={articleStyle}>
         <Text>
@@ -51,15 +51,15 @@ const AuthorSection = () => (
           <br />
           <br />
           Olá, meu nome é Robson! Tenho 23 anos e vim bem literalmente lá do
-          sertão, do interior da Paraíba. Sou formado em Ciência da Computação e
-          tenho uma paixão por escrita. Já escrevo poemas há alguns anos e
-          recentemente publiquei meu primeiro livro, <i>Eu diante de antieu</i>,
-          pela Editora Folheando. Além disso, meu mais novo livro,{' '}
-          <i>Daqui do quarto</i>, está em pré-venda e será publicado em breve
-          pela Editora Urutau.
+          sertão: de Patos, cidade do interior da Paraíba. Sou graduado em
+          Ciência da Computação pela UFCG e sou apaixonado por escrita. Sempre
+          gostei de escrever qualquer tipo de coisa, mas desenvolvi, ao longo da
+          minha vida, uma afeição por poesia. Em 2022, publiquei meus dois
+          primeiros livros: <i>Eu diante de antieu</i>, pela Editora Folheando,
+          e <i>Daqui do quarto</i>, pela Editora Urutau.
           <br />
           <br />
-          Seria um prazer ser lido por você!
+          Seria um prazer ser lido por você, viu?
         </Text>
       </Box>
       <Flex sx={menuStyle}>

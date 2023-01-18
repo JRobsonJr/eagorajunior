@@ -46,7 +46,7 @@ const descriptionContainerStyle: ThemeUIStyleObject = {
   textAlign: 'center',
 }
 
-const PreOrderSection: FC = () => (
+const DDQSection: FC = () => (
   <Grid variant="section">
     <PreOrderArt />
     <Flex sx={descriptionContainerStyle}>
@@ -72,4 +72,4 @@ const PreOrderSection: FC = () => (
   </Grid>
 )
 
-export default PreOrderSection
+export default DDQSection

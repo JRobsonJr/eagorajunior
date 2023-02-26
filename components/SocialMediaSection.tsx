@@ -45,12 +45,12 @@ const imageContainer: ThemeUIStyleObject = {
 const SocialMediaSection = () => (
   <Grid variant="section" id="newsletter">
     <Flex sx={textContainerStyle}>
-      <Text variant="sectionSubtitle">Minha persona literária online</Text>
+      <Text variant="sectionSubtitle">Uma newsletter</Text>
       <Text variant="sectionTitle">E agora, Junior?</Text>
       <Box as="article" sx={articleStyle}>
         <Text>
-          Acompanhe-me pelas redes sociais para ver alguns conteúdos
-          interessantíssimos (talvez), como:
+          Inscreva-se na minha newsletter para ter acesso a conteúdos
+          diferenciados, como:
         </Text>
         <Box as="ul" sx={ulStyle}>
           <li>atualizações sobre escrita,</li>
@@ -61,6 +61,9 @@ const SocialMediaSection = () => (
         </Box>
       </Box>
       <Flex sx={menuStyle}>
+        <Link href="https://eagorajunior.substack.com/" variant="button" newTab>
+          Inscreva-se
+        </Link>
         <Link
           href="https://www.instagram.com/eagorajunior"
           variant="button"

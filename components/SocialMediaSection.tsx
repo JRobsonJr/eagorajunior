@@ -71,13 +71,6 @@ const SocialMediaSection = () => (
         >
           <IconInstagram />
         </Link>
-        <Link
-          href="https://www.twitter.com/eagorajunior"
-          variant="button"
-          newTab
-        >
-          <IconTwitter />
-        </Link>
       </Flex>
     </Flex>
     <Flex sx={imageContainer}>

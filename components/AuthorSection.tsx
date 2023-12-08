@@ -50,13 +50,15 @@ const AuthorSection = () => (
           sertão... 🎶
           <br />
           <br />
-          Olá, meu nome é Robson! Tenho 23 anos e vim bem literalmente lá do
+          Olá, meu nome é Robson! Tenho 24 anos e vim bem literalmente lá do
           sertão: de Patos, cidade do interior da Paraíba. Sou graduado em
-          Ciência da Computação pela UFCG e sou apaixonado por escrita. Sempre
+          Ciência da Computação pela UFCG e apaixonado por escrita. Sempre
           gostei de escrever qualquer tipo de coisa, mas desenvolvi, ao longo da
           minha vida, uma afeição por poesia. Em 2022, publiquei meus dois
           primeiros livros: <i>Eu diante de antieu</i>, pela Editora Folheando,
-          e <i>Daqui do quarto</i>, pela Editora Urutau.
+          e <i>Daqui do quarto</i>, pela Editora Urutau. Acabo de lançar, também
+          pela Editora Urutau, meu terceiro livro,{' '}
+          <i>Para estreitar os tatos</i>.
           <br />
           <br />
           Seria um prazer ser lido por você, viu?

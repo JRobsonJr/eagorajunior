@@ -4,11 +4,10 @@ import type { NextPage } from 'next'
 import type { ThemeUIStyleObject } from 'theme-ui'
 
 import AuthorSection from '../components/AuthorSection'
-import EDDASection from '../components/EDDASection'
 import Meta from '../components/Meta'
 import Navbar from '../components/Navbar'
 import SocialMediaSection from '../components/SocialMediaSection'
-import DDQSection from '../components/DDQSection'
+import BooksSection from '../components/BooksSection'
 
 const NAVBAR_HEIGHT = 48
 
@@ -35,8 +34,7 @@ const Home: NextPage = () => {
       <Flex sx={bodyStyle}>
         <Navbar />
         <Flex sx={containerStyle}>
-          <DDQSection />
-          <EDDASection />
+          <BooksSection />
           <SocialMediaSection />
           <AuthorSection />
         </Flex>

@@ -126,6 +126,14 @@ const theme: Theme = {
       fontFamily: 'Bebas Neue',
       lineHeight: 1,
     },
+    bookTitle: {
+      display: 'flex',
+      flexDirection: 'column',
+      textAlign: 'center',
+      fontSize: ['2rem', '3rem', '3rem', '3rem', '4rem'],
+      fontFamily: 'Bebas Neue',
+      lineHeight: 1,
+    },
     sectionSubtitle: {
       textTransform: 'lowercase',
       fontSize: '1.25rem',
@@ -184,6 +192,17 @@ const theme: Theme = {
       ],
       gap: [0, 0, 0, '1rem'],
       padding: '2rem',
+    },
+    bookSection: {
+      flexDirection: 'column',
+      alignItems: 'flex-start',
+      gap: [0, 0, 0, '1rem'],
+      gridTemplateRows: [
+        'min-content min-content',
+        'min-content min-content',
+        'min-content min-content',
+        '3fr 2fr',
+      ],
     },
   },
 }

@@ -102,6 +102,7 @@ const BooksSection: FC = () => (
       coverArt="/tatos.png"
       publisher="Editora Urutau"
       year={2023}
+      purchaseUrl="https://editoraurutau.com/titulo/para-estreitar-os-tatos"
       skoobUrl="https://www.skoob.com.br/para-estreitar-os-tatos-122397291ed122398576.html"
     />
     <BookDetails

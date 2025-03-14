@@ -8,27 +8,26 @@ const heading = {
 }
 
 const buttonStyle: ThemeUIStyleObject = {
-  fontFamily: 'sansSerif',
   textTransform: 'lowercase',
   backgroundColor: 'transparent',
   color: 'primary',
-  border: '1px solid #33b3c3',
+  border: '2px solid',
+  borderColor: 'primary',
   transition: 'all .2s ease-in-out',
   ':hover': {
     color: 'white',
-    backgroundColor: '#33b3c3',
+    backgroundColor: 'primary',
   },
   cursor: 'pointer',
 }
 
 const theme: Theme = {
-  breakpoints: ['30rem', '48rem', '56rem', '64rem'],
+  breakpoints: ['30rem', '48rem', '56rem', '64rem', '90rem'],
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
   fonts: {
-    body: '"EB Garamond", system-ui, -apple-system, BlinkMacSystemFont, serif',
+    body: 'Gothic A1, sans-serif',
     heading: 'inherit',
     monospace: '"Xanh Mono", monospace',
-    sansSerif: '"Montserrat", sans-serif',
   },
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 96],
   fontWeights: {
@@ -43,7 +42,7 @@ const theme: Theme = {
   colors: {
     text: '#000',
     background: '#fff',
-    primary: '#33b3c3',
+    primary: '#de6e86',
     secondary: '#30c',
     muted: '#f6f6f6',
   },
@@ -119,25 +118,26 @@ const theme: Theme = {
   },
   text: {
     sectionTitle: {
-      display: 'flex',
-      flexDirection: 'column',
-      textAlign: 'center',
-      fontSize: ['4rem', '8rem'],
-      fontFamily: 'Bebas Neue',
+      textAlign: 'start',
+      fontSize: '2.5rem',
+      fontFamily: 'Inter',
       lineHeight: 1,
+      fontWeight: '900',
+      color: 'primary',
+      textTransform: 'lowercase',
+    },
+    headline: {
+      fontSize: ['1.5rem', '1.5rem', '1.75rem', '1.75rem', '1.7rem', '2rem'],
     },
     bookTitle: {
-      display: 'flex',
-      flexDirection: 'column',
-      textAlign: 'center',
-      fontSize: ['2rem', '3rem', '3rem', '3rem', '4rem'],
-      fontFamily: 'Bebas Neue',
+      fontSize: ['1.5rem', '1.5rem', '1.5rem', '1.75rem', '1.75rem', '2rem'],
+      color: 'white',
+      fontFamily: 'Inter',
       lineHeight: 1,
+      fontWeight: '900',
     },
     sectionSubtitle: {
-      textTransform: 'lowercase',
-      fontSize: '1.25rem',
-      fontFamily: 'sansSerif',
+      fontSize: ['1rem','1.25rem'],
     },
     poemTitle: {
       fontSize: '1.5rem',
@@ -153,7 +153,6 @@ const theme: Theme = {
     navigation: {
       textDecoration: 'none',
       color: 'black',
-      fontFamily: 'sansSerif',
       display: 'flex',
       alignItems: 'center',
       gap: '.5rem',
@@ -164,14 +163,30 @@ const theme: Theme = {
     },
     button: {
       ...buttonStyle,
+      fontWeight: '600',
       height: 42,
       paddingX: '1rem',
       paddingY: '.5rem',
       borderRadius: '.25rem',
       textDecoration: 'none',
       textAlign: 'center',
-      textTransform: 'uppercase',
+      textTransform: 'lowercase',
       whiteSpace: 'nowrap',
+    },
+    'button--selected': {
+      ...buttonStyle,
+      fontWeight: '600',
+      height: 42,
+      paddingX: '1rem',
+      paddingY: '.5rem',
+      borderRadius: '.25rem',
+      textDecoration: 'none',
+      textAlign: 'center',
+      textTransform: 'lowercase',
+      whiteSpace: 'nowrap',
+      
+      color: 'white',
+      borderColor: 'white',
     },
     photo: {
       ':hover': {
@@ -181,28 +196,20 @@ const theme: Theme = {
   },
   grids: {
     section: {
+      scrollMarginTop: '96px',
       flexDirection: ['column', 'column', 'column', 'row'],
-      alignItems: 'center',
+      alignItems: 'flex-end',
       gridTemplateColumns: ['1fr', '1fr', '1fr', '1fr 1fr'],
-      gridTemplateRows: [
-        'min-content 1fr',
-        'min-content 1fr',
-        'min-content 1fr',
-        '1fr',
-      ],
-      gap: [0, 0, 0, '1rem'],
-      padding: '2rem',
+      gap: ['1.5rem', '2rem'],
+      paddingX: ['2rem', '2rem', '2rem', '4rem', '8rem'],
+      paddingY: ['2rem', '2rem', '2rem', '4rem'],
     },
-    bookSection: {
-      flexDirection: 'column',
-      alignItems: 'flex-start',
-      gap: [0, 0, 0, '1rem'],
-      gridTemplateRows: [
-        'min-content min-content',
-        'min-content min-content',
-        'min-content min-content',
-        '3fr 2fr',
-      ],
+    fullWidthSection: {
+      scrollMarginTop: '96px',
+      alignItems: 'center',
+      paddingX: ['2rem', '2rem', '2rem', '4rem', '8rem'],
+      paddingY: ['2rem', '2rem', '2rem', '4rem'],
+      width: '100%',
     },
   },
 }

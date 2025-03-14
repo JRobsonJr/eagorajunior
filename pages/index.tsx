@@ -8,17 +8,21 @@ import Meta from '../components/Meta'
 import Navbar from '../components/Navbar'
 import SocialMediaSection from '../components/SocialMediaSection'
 import BooksSection from '../components/BooksSection'
+import StoreSection from '../components/StoreSection'
+import Footer from '../components/Footer'
 
-const NAVBAR_HEIGHT = 48
+const NAVBAR_HEIGHT = 48 * 2
 
 const bodyStyle: ThemeUIStyleObject = {
   flexDirection: 'column',
+  backgroundColor: '#171717',
 }
 
 const containerStyle: ThemeUIStyleObject = {
   flexDirection: 'column',
   marginTop: NAVBAR_HEIGHT,
-  gap: [0, 0, 0, '2rem'],
+  color: 'white',
+  alignItems: 'center',
 }
 
 const Home: NextPage = () => {
@@ -34,9 +38,11 @@ const Home: NextPage = () => {
       <Flex sx={bodyStyle}>
         <Navbar />
         <Flex sx={containerStyle}>
+          <AuthorSection /> 
           <BooksSection />
+          <StoreSection />
           <SocialMediaSection />
-          <AuthorSection />
+          <Footer />
         </Flex>
       </Flex>
     </>

@@ -90,7 +90,7 @@ const StoreSection = () => {
           i: {
             color: 'primary'
           } }}>
-            A coleção "Tatos" tem <mark>camisetas</mark>, <mark>ecobags</mark>, <mark>ímãs</mark> e <mark>bottons</mark> com
+            A coleção <i>Tatos</i> tem <mark>camisetas</mark>, <mark>ecobags</mark>, <mark>ímãs</mark> e <mark>bottons</mark> com
             estampas inspiradas pelo meu terceiro livro de poesia, <i>Para estreitar os tatos</i>. Confere lá!
           </Text>
         </Box>

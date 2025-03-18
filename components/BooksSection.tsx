@@ -8,7 +8,8 @@ import Link from './Link'
 const menuStyle: ThemeUIStyleObject = {
   gap: '1rem',
   justifyContent: 'center',
-  flexDirection: ['row', 'row', 'row', 'column', 'column', 'row'],
+  flexDirection: ['column', 'row', 'row', 'column', 'column', 'row'],
+  width: '100%',
   alignSelf: 'center',
   justifySelf: ['flex-start', 'flex-start', 'flex-end'],
 }
@@ -48,6 +49,7 @@ const BookDetails: FC<BookDetailsProps> = ({
   year,
   skoobUrl,
   purchaseUrl,
+  playlistUrl,
   handleHover,
   id,
   isSelected,
@@ -78,6 +80,9 @@ const BookDetails: FC<BookDetailsProps> = ({
         <Link newTab href={skoobUrl} variant={isSelected ? 'button--selected' : 'button'}>
           Skoob
         </Link>
+        <Link newTab href={playlistUrl} variant={isSelected ? 'button--selected' : 'button'}>
+          Playlist
+        </Link>
       </Flex>
     </Grid>
   </Flex>
@@ -96,7 +101,8 @@ const books = [
     publisher: "Editora Urutau",
     year: 2023,
     purchaseUrl: 'https://editoraurutau.com/titulo/para-estreitar-os-tatos',
-    skoobUrl: 'https://www.skoob.com.br/para-estreitar-os-tatos-122397291ed122398576.html'
+    skoobUrl: 'https://www.skoob.com.br/para-estreitar-os-tatos-122397291ed122398576.html',
+    playlistUrl: 'https://open.spotify.com/playlist/1IYqeJW0sodsxiFaowuEF1?si=4ca7ce3e190b4831'
   },
   {
     id: "2",
@@ -105,7 +111,8 @@ const books = [
     publisher: "Editora Urutau",
     year: 2022,
     purchaseUrl: "https://editoraurutau.com/titulo/daqui-do-quarto",
-    skoobUrl: "https://www.skoob.com.br/daqui-do-quarto-122240598ed122246815.html"
+    skoobUrl: "https://www.skoob.com.br/daqui-do-quarto-122240598ed122246815.html",
+    playlistUrl: 'https://open.spotify.com/playlist/767pP66c83SGrwGQHtujEm?si=ab4237fcfe2c499a'
   },
   {
     id: "1",
@@ -113,7 +120,8 @@ const books = [
     coverArt: "/edda.jpg",
     publisher: "Editora Folheando",
     year: 2022,
-    skoobUrl: "https://www.skoob.com.br/eu-diante-de-antieu-12214398ed12195511.html"
+    skoobUrl: "https://www.skoob.com.br/eu-diante-de-antieu-12214398ed12195511.html",
+    playlistUrl: 'https://open.spotify.com/playlist/4otMSsrADFebYGG9ezTn1P?si=bbe37e8ec6c146cf'
   }
 ];
 

@@ -36,6 +36,7 @@ interface BookDetailsProps {
   handleHover: (id: string) => void
   id: string
   isSelected: boolean
+  playlistUrl: string
 }
 
 const bookDetailsStyle: ThemeUIStyleObject = {
